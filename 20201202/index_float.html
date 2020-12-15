@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>float</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		div.b{background-color: skyblue;
+
+			width: 300px;
+/*display: inline-block;*/
+float: left;
+margin-right: 10px;
+padding: 20px;
+text-align: justify;
+
+		}
+    div.box{background-color: skyblue;
+    	width: 500px;
+    /*	margin-right: auto;
+    	margin-left: auto;*/
+margin:0 auto;
+
+
+    }
+    div.box>div.box1{float: left;width: 200px;
+    	background-color: orange;}
+    div.box>div.box2{float: right;width: 200px; background-color: green;}
+    div.box>div.box3{clear: both;}
+	.clearfix:after{content: "";display: block;clear: both;}
+	</style>
+</head>
+<body>
+	<div class="b"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	
+</div>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam rem a minus eum temporibus consequatur magni veritatis atque nisi. Dolorem, adipisci velit aliquam nam ratione sunt delectus eaque dolor temporibus.
+<img src="../images/testimg.jpg" alt="">
+<hr>
+<div class="box clearfix">
+<div class="box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste facilis quas esse, dolorem necessitatibus eos dicta assumenda ipsam cum voluptatem minus sit suscipit illo, velit sed expedita ad rerum. Vel?</div>
+ 	<div class="box2">Tempora, natus architecto praesentium autem voluptate sed nobis quasi ducimus vitae commodi temporibus voluptates aliquam delectus pariatur ut laborum, inventore dignissimos! Labore optio aliquid, odit quisquam natus sapiente numquam id.</div>
+ 		</div>
+ 	
+<style>
+	div.box10:before{content:"안녕하세요";}
+	div.box10:after{content: "만나서 반갑습니다.";
+display: block;
+clear: both;
+}
+
+</style>
+
+
+ 		<div class="box10">
+ 			Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Eum recusandae tenetur nulla veritatis dolorem ut, possimus est rerum quis labore amet non, nihil quod tempore veniam fuga et, deleniti ea!
+ 		</div>
+
+	
+</body>
+</html>

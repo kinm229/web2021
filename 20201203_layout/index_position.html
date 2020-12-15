@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>position</title>
+
+<style>
+	*{margin: 0;padding: 0px;}
+		a:link;a:visited;{color: #000;text-decoration: none;}
+li{list-style: none;}
+.clearfix:after{content: "";display: block;clear: both;}
+body{background-image: url(../images/bg_grid.gif);
+/*background-repeat: no-repeat;*/}
+
+
+div{width: 200px;;height: 200px;}
+div.box1{background-color: violet;
+/*position: relative;
+left: 100px; top: 100px;*/
+position: absolute;left: 0;top: 0;}
+div.box2{background-color: skyblue;position: absolute;
+right: 0;top: 0; 
+}
+div.box3{background-color: orange;
+position: absolute;right: 0;bottom: 0;}
+div.box4{background-color: yellow; position: absolute;left: 0;bottom: 0;}
+
+</style>
+
+
+
+
+
+</head>
+
+
+<body>
+	<div class="box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ea maiores ipsum distinctio vitae quae sunt aspernatur,</div>
+	<div class="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ea maiores ipsum distinctio vitae quae sunt aspernatur, </div>
+	<div class="box3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ea maiores ipsum distinctio vitae quae sunt aspernatur, </div>
+	<div class="box4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ea maiores ipsum distinctio vitae quae sunt aspernatur, </div>
+
+
+
+	</div>
+	
+</body>
+</html>
