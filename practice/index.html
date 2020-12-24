@@ -9,9 +9,49 @@
 		a:link,a:visited{color: #000;text-decoration:none;}
 		li{list-style: none;}
 		.clearfix:after{content:"";display: block;clear: both;}
+
+		/*header*/ /*w1000px*/
+header.hader{
+	width: 1000px;
+	background: pink;
+	margin: 0 auto; /*align center*/
+}
+header.hader>h1{}
+header.hader>nav.nav{}
+header.hader>nav.nav>ul{}
+header.hader>nav.nav>ul>li{}
+header.hader>nav.nav>ul>li>a{}
+
+
+
+
 	</style>
 </head>
 <body>
-	
+	<!-- header.header>h1>{logo}^nav.nav>ul>li*5>a[href="#"]>{menu$}
+	header.header>(h1>{logo})+(nav.nav>ul>li*5>a[href="#"]>{menu$})
+	 -->
+
+	 <header class="header">
+		<h1>logo</h1>
+		<nav class="nav">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	<div class="visual_slider">visual slider</div>
+	<section class="container">
+		 <aside class="aside">aside</aside>
+		 <div class="content">content</div>
+	</section>
+	<footer class="footer">
+		footer
+	</footer>
 </body>
 </html>
