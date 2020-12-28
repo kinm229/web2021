@@ -24,6 +24,7 @@
 		.box:hover .img{
 			transform:translate(-50%,-50%) scale(1.2);
 		}
+
 		.box .plus{
 			position: absolute;width: 50px;height: 50px;
 			left:50%;top:50%;transform:translate(-50%,-50%);
@@ -32,12 +33,16 @@
 		.box:hover .plus{
 			transform:translate(-50%,-50%) rotate(90deg);
 		}
+
 		.box .bg{
 			width: 100%;height: 100%;background:#000;
 			position: relative;opacity:0;transition:0.3s;
 		}
 		.box:hover .bg{opacity:0.2;}
+
 		.box:hover{border: 20px solid  skyblue;}
+
+
 		.wrap{
 			width: 50px;height: 50px;_background:pink;
 			position: absolute;left:50%;top: 50%;
@@ -45,6 +50,7 @@
 			border-radius:25px;border: 4px solid #fff;
 			transition:0.3s;
 		}
+
 		.wrap .bar1,.wrap .bar2{
 			width: 30px;height: 4px;background: #fff;
 			position: absolute;left: 50%;top:50%;
@@ -52,6 +58,7 @@
 			border-radius:3px;
 		}
 		.wrap .bar2{transform:translate(-50%,-50%) rotate(90deg);}
+
 		.box:hover .wrap{transform:translate(-50%,-50%) rotate(90deg);}
 	</style>
 </head>
@@ -78,6 +85,7 @@
 		.contents ul li img{width: 100%;display: block;
 			transition:0.3s;
 		}
+
 		.contents .bg{
 			width: 100%;height: 100%;
 			position: absolute;
@@ -90,6 +98,7 @@
 			transform:translate(-50%,-50%);
 			color:white;
 		}
+
 		/*left*/
 		.contents li:nth-child(2) .bg{left:-100%;top:0px;opacity:1;}
 		.contents li:nth-child(2):hover .bg{left:0;}
@@ -105,14 +114,18 @@
 		/*bottom*/
 		.contents li:nth-child(5) .bg{left:0;bottom:-100%;opacity:1;}
 		.contents li:nth-child(5):hover .bg{bottom:0;}
+
 		.contents li:nth-child(1):hover .bg{opacity:1;}
 		.contents li:nth-child(1):hover img{transform:scale(1.1);}
+
+
 		.gray{background:#ccc;}
 		.round{border-radius:50% !important;}
 	</style>
+
 	<div class="container gray">
 		<div class="contents">
-			<h2>gallery</h2>
+			<h2><a href="!#">gallery</a></h2>
 			<ul class="clearfix">
 				<li class="round">
 					<img src="../images/testimg.jpg" alt="">
@@ -164,6 +177,7 @@
 	.btnWrapOne a{display: block;text-align: center;line-height: 40px}
 	.btnWrapOne .bar{
 		position: absolute;width:100%;height: 5px;background: #f00;bottom:0;
+		
 		transform:scaleX(0);
 		transition:0.3s;
 	}
@@ -185,14 +199,18 @@
 		.btnWrapTwo .bar{
 			position: absolute;width: 100%;height: 100%;
 			background: red;
+			-ms-transform::scaleX(0);
+			-ms-transform-origin:0 50%;
 			transform:scaleX(0);
 			transition:0.3s;
-			transform-origin:left center;
+			transform-origin:0 50%;
 		}
 
 		.btnWrapTwo:hover .bar{
+			-ms-transform::scaleX(1);
+			-ms-transform-origin:100% 50%;
 			transform:scaleX(1);
-			transform-origin:right center;
+			transform-origin:100% 50%;
 		}
 		.btnWrapTwo:hover a{
 			color:white;font-weight: bold;
@@ -204,6 +222,27 @@
 		<a href="#">BUTTON</a>
 	</div>
 
+
+
+
+	<style>
+		.btnwrapt{width: 200px;height: 40px;position: relative;}
+
+		.btnwrapt a{display: block;text-align: center;line-height: 40px;position: relative;}
+
+		.btnwrapt .bar{position: absolute;width: 100%;height: 100%;background: olive;
+			transform:scaleX(0);transition:0.3s;transform-origin:left center;}
+
+		.btnwrapt:hover .bar{transform: scaleX(1); transform-origin: right center }
+
+		.btnwrapt:hover a{color: white;font-weight: bold;}
+	</style>
+
+	<div class="btnwrapt" id="han">
+		<div class="bar"></div>
+		<a href="#">button</a>
+	</div>
+
 <div style="height: 1000px;"></div>
 </body>
-</html> 
+</html>

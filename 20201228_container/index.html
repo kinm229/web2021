@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>container</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.container h3{text-align: center;}
+		.container h3:after{
+			content:"";display: block; /*inline*/
+			width: 200px;height: 1px;
+			background-color: #000;
+			margin:5px auto;
+
+			/*
+			가운데정렬
+			1. margin:0 auto;
+			2. poa left:50% margin-left:-100px;
+			3. poa left:50% transform:translateX(-50%);
+			*/
+		}
+		.container p{text-align: center;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>GALLERY</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, esse.</p>
+		<div class="contents"> <!-- 1200 mauto-->	
+			<ul>
+				<li>
+					<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum.</div>
+					</div>
+				</li>
+				<li>
+					<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum.</div>
+					</div>
+				</li>
+				<li>
+					<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum.</div>
+					</div>
+				</li>
+				<li>
+					<img src="../images/testimg.jpg" alt="">
+					<div class="overlay">
+						<div class="txt">Lorem, ipsum.</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
