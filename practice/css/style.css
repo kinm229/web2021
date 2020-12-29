@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+div.utilwrap{border-bottom: 1px solid #ccc;}
+div.util{width: 980px;margin: 0 auto;background: skyblue;}
+ul.utilmenu{margin-left: auto;width: 280px;}
+ul.utilmenu li{float: left;}
+ul.utilmenu li a{display: block;p}
