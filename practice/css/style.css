@@ -15,7 +15,8 @@ h1{text-align: center;border-top: 1px solid #000;height: 100px;padding-top: 25px
 .main_menu>ul>li>a{color: white;}
 .main_menu>ul>li>a:hover{color: orange;}
 
-.visual_wrap{width: 1920px;height: 400px;background-image: url("../images/01himedia.jpg");}
-.visual{}
-.visual_txt{}
-.visual_img{}
+.visual_wrap{height: 400px;background-image: url("../images/01himedia.jpg");
+             background-position: center;background-repeat: no-repeat;}
+.visual{width: 980px;height: 400px;margin: 0 auto;position: relative; }
+.visual_txt{position: absolute;left: 0px;top: 75px;}
+.visual_img{position: absolute;right: 0;top: 49px;}
