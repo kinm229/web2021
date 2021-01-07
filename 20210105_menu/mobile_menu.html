@@ -11,20 +11,21 @@
 	<script>
 		$(document).ready(function(){
 			$(".toggle").click(function(){
-				
+
 				// if(조건){
 				// 	true실행문;
 				// }else{
 				// 	false실행문;
 				// }
+				//
 
-				if( $("#myTopMenu").attr("class") == "topNav clearfix" ){
+				if( $("#myTopMenu").attr("class") != "topNav clearfix" ){
 					$("#myTopMenu").addClass("responsive");
 				}else{
 					$("#myTopMenu").removeClass("responsive");
 				}
 				console.log( $("#myTopMenu").attr("class") );
-				
+
 			});
 		});
 	</script>
@@ -32,7 +33,7 @@
 </head>
 <body>
 	<div class="menuWrap">
-		<nav id="myTopMenu" class="topNav clearfix">
+		<nav id="myTopMenu" class="topNav clearfix ">
 			<a href="#">HOME</a>
 			<a href="#"><i class="fab fa-pagelines"></i> NEWS</a>
 			<a href="#"><i class="fas fa-file-signature"></i> CONTACT</a>
