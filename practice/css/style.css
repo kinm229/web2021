@@ -20,3 +20,19 @@ h1{text-align: center;border-top: 1px solid #000;height: 100px;padding-top: 25px
 .visual{width: 980px;height: 400px;margin: 0 auto;position: relative; }
 .visual_txt{position: absolute;left: 0px;top: 75px;}
 .visual_img{position: absolute;right: 0;top: 49px;}
+
+.list_menu_wrap{background: #eeeeee;height: 196px;}
+.list_menu{width: 980px;margin: 0 auto;}
+.list_menu ul li{float: left;width: 196px;text-align: center;height: 196px;border-right: 1px solid #000;}
+.list_menu ul li:first-child{border-left: 1px solid #000;}
+.list_menu ul li h3{text-align: center;padding-top: 15px;}
+.list_menu ul li #txt{font-size:13px;}
+.list_menu ul li img{margin: 0 auto;padding-top: 15px;}
+.list_menu ul .list1{background: #7c99b9;}
+.list_menu ul .list2{background: #4f74a1;}
+.list_menu ul .list3{background: #4b8ce0;}
+.list_menu ul .list4{background: #3db5f2;}
+.list_menu ul .list5{background: #95c8ff;}
+
+
+
