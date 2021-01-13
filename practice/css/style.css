@@ -17,7 +17,7 @@ h1{text-align: center;border-top: 1px solid #000;height: 100px;padding-top: 25px
 
 .visual_wrap{height: 400px;background-image: url("../images/01himedia.jpg");
              background-position: center;background-repeat: no-repeat;}
-.visual{width: 980px;height: 400px;margin: 0 auto;position: relative; }
+.visual{width: 980px;height: 400px;margin: 0 auto;position: relative;overflow:hidden; }
 .visual_txt{position: absolute;left: 0px;top: 75px;}
 .visual_img{position: absolute;right: 0;top: 49px;}
 
@@ -33,6 +33,14 @@ h1{text-align: center;border-top: 1px solid #000;height: 100px;padding-top: 25px
 .list_menu ul .list3{background: #4b8ce0;}
 .list_menu ul .list4{background: #3db5f2;}
 .list_menu ul .list5{background: #95c8ff;}
+
+.content_menu_wrap{background: #fff;height: 569px;}
+.content_menu_wrap .content_menu{width: 980px;margin: 0 auto;}
+.content01 ul li{float: left;}
+
+
+
+
 
 
 
