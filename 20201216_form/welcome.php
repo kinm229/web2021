@@ -9,17 +9,14 @@
 	<?
 	$na = $_GET["na"];
 	$email = $_GET["email"];
-
 	?>
 
 
 	<p>
 		이름 : <? echo $na; ?>
-
 	</p>
 	<p>
 		이메일 : <? echo $email; ?>
 	</p>
-
 </body>
 </html>

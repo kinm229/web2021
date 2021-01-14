@@ -47,5 +47,12 @@
 	content:"";display: block;width: 1px;height: 15px;
 	background: #000;position: absolute;top:10px;
 }
-
 #bottom_gnb>div:first-child>a:after{content:"";display: none;}
+
+.main_section{border-bottom: 1px solid #000;}
+#section_header{padding: 20px;}
+#section_article{padding: 20px;}
+#section_article>p{margin-bottom: 10px;}
+
+#main_footer{padding: 10px;text-align: center;}
+#main_footer>address{font-style:normal;}
