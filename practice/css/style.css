@@ -34,10 +34,32 @@ h1{text-align: center;border-top: 1px solid #000;height: 100px;padding-top: 25px
 .list_menu ul .list4{background: #3db5f2;}
 .list_menu ul .list5{background: #95c8ff;}
 
-.content_menu_wrap{background: #fff;height: 569px;}
+.content_menu_wrap{background: #fff;height: 569px;margin-top: 50px;}
 .content_menu_wrap .content_menu{width: 980px;margin: 0 auto;}
-.content01 ul li{float: left;}
-
+.content01 ul li{float: left;margin-right: 25px;}
+.content01 ul li:last-child{margin-right: 0;}
+.content01 ul li .content_txt01{border:1px solid #eeeeee;border-top: none;width: 310px;height: 102px;}
+.content01 ul li .content_txt01 p{font-size: 12px;color: #a3a3a3;padding-left: 14px;}
+.content01 ul li .content_txt02 p{font-size: 12px;color: #a3a3a3;padding-left: 14px;}
+.content01 ul li .content_txt03 p{font-size: 12px;color: #a3a3a3;padding-left: 14px;}
+.content01 ul li .content_txt01 h3{padding:15px 0px 8px 14px;}
+.content01 ul li .content_txt02 h3{padding:15px 0px 8px 14px;}
+.content01 ul li .content_txt03 h3{padding:15px 0px 8px 14px;}
+.content01 ul li .content_txt02{border:1px solid #eeeeee;border-top: none;width: 310px;height: 102px;}
+.content01 ul li .content_txt03{border:1px solid #eeeeee;border-top: none;width: 310px;height: 102px;}
+.content02 ul li{float: left;width: 310px;height: 164px;border: 1px solid #eeeeee;margin-right: 25px;position: relative;}
+.content02 ul li:last-child{margin-right: 0;}
+.content02 ul li img{position: absolute;top:4px;left:134px;}
+.content02{margin-top: 20px;}
+.content02 ul li .content2_txt01 h3{padding:15px 0px 8px 14px;}
+.content02 ul li .content2_txt02 h3{padding:15px 0px 8px 14px;}
+.content02 ul li .content2_txt03 h3{padding:15px 0px 8px 14px;}
+.content02 ul li .content2_txt01 p{font-size: 12px;color: #a3a3a3;padding-left: 14px;margin-bottom:8px;}
+.content02 ul li .content2_txt02 p{font-size: 12px;color: #a3a3a3;padding-left: 14px;margin-bottom:8px;}
+.content02 ul li .content2_txt03 p{font-size: 12px;color: #a3a3a3;padding-left: 14px;margin-bottom:8px;}
+.content02 ul li .content2_txt01 a{color: skyblue;font-size: 12px;padding-left: 14px;}
+.content02 ul li .content2_txt02 a{color: skyblue;font-size: 12px;padding-left: 14px;}
+.content02 ul li .content2_txt03 a{color: skyblue;font-size: 12px;padding-left: 14px;}
 
 
 
