@@ -19,7 +19,7 @@
 				// }
 				//
 
-				if( $("#myTopMenu").attr("class") != "topNav clearfix" ){
+				if( $("#myTopMenu").attr("class") == "topNav clearfix" ){
 					$("#myTopMenu").addClass("responsive");
 				}else{
 					$("#myTopMenu").removeClass("responsive");
@@ -32,6 +32,9 @@
 
 </head>
 <body>
+	<style>
+	.menuWrap{background-color:#1f7746;}
+	</style>
 	<div class="menuWrap">
 		<nav id="myTopMenu" class="topNav clearfix ">
 			<a href="#">HOME</a>
