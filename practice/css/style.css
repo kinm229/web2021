@@ -61,6 +61,17 @@ h1{text-align: center;border-top: 1px solid #000;height: 100px;padding-top: 25px
 .content02 ul li .content2_txt02 a{color: skyblue;font-size: 12px;padding-left: 14px;}
 .content02 ul li .content2_txt03 a{color: skyblue;font-size: 12px;padding-left: 14px;}
 
+.footer_wrap{}
+.footer_wrap .footer01{background: #4d4d4d;height: 43px;}
+.footer_wrap .footer01 .footer01_txt{width: 980px;margin: 0 auto;}
+.footer_wrap .footer01 .footer01_txt ul{}
+.footer_wrap .footer01 .footer01_txt ul li{float: left;font-weight: bold;padding-right:40px;padding-top:10px;}
+.footer_wrap .footer01 .footer01_txt ul li:last-child{padding-right:0;}
+.footer_wrap .footer01 .footer01_txt ul li a{color:#cccccc}
+.footer_wrap .footer02{background: #5e5e5e;height: 104px;}
+.footer_wrap .footer02 .footer02_txt{}
+.footer_wrap .footer02 .footer02_txt h2{}
+.footer_wrap .footer02 .footer02_txt p{}
 
 
 

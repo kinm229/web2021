@@ -11,12 +11,34 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
+			
 			$(".slider").bxSlider();
 			$(".slider1st").bxSlider({
 				controls:false,
 				pager:false
 			});
+
+
+			$(".toggleMenu").click(function(){
+				var toggle = $(".toggleMenu").attr("class"); //get
+				console.log(toggle); // toggleMenu
+				if(toggle == "toggleMenu"){
+					$(".toggleMenu").addClass("change");
+					$("#main_menu").stop().animate({left:0},300);
+				}else{
+					$(".toggleMenu").removeClass("change");
+					$("#main_menu").stop().animate({left:"-100%"},300);
+				}
+
+			});
+
+			$(window).resize(function(){
+				$(".toggleMenu").removeClass("change");
+				$("#main_menu").removeAttr("style");
+			});
+
 		});
+
 	</script>
 </head>
 <body>
@@ -55,7 +77,7 @@
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nulla.</p>
 					</div>
 				</li>
-				
+
 
 			</ul>
 		</div>
@@ -158,20 +180,20 @@
 					<a href="#">
 						<img src="images/img01_05.jpg" alt="빛과에너지">
 						<div class="txt">
-							<h3>전력 및 에너지 플렌트</h3>
+							<h3>전력 및 에너지 플렌트1</h3>
 							<p>세상을 밝히는<br>빛과 에너지</p>
 						</div>
 					</a>
 				</li>
 			</ul>
 		</div>
-		
+
 	</header>
 	<div class="container">
 		<div class="section">
 			<h4>비젼</h4>
 			<p>VISION 2021</p>
-			
+
 			<ul class="clearfix">
 				<li>
 					<div class="card">
@@ -196,7 +218,7 @@
 						<img src="images/banner_icon01_03.png" alt="engineering">
 						<div class="card_body">
 							<h3>Engineering</h3>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, modi?</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, modi?11</p>
 						</div>
 					</div>
 				</li>
@@ -213,7 +235,6 @@
 
 		</div>
 	</div>
-
 
 </body>
 </html>
