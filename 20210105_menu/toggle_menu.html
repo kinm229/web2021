@@ -93,10 +93,6 @@
 	<script>
 		$(document).ready(function(){
 
-			
-
-			
-
 			$(".toggleMenu").click(function(){
 				console.log( $(".toggleMenu").attr("class") );
 				var toggle = $(".toggleMenu").attr("class");
@@ -106,10 +102,10 @@
 				}else{
 					$(".toggleMenu").removeClass("change");
 					$("#myTopMenu").stop().animate({left:"-100%"},300);
-
-
 				}
 			});
+
+
 		});
 		$(window).resize(function(){
 				
@@ -124,7 +120,7 @@
 	<div class="menuWrap">
 		<h1>logo</h1>
 		<div id="myTopMenu">
-			<nav  class="topNav clearfix noFloat">
+			<nav  class="topNav clearfix">
 				<a href="#">HOME</a>
 				<a href="#"><i class="fas fa-headphones"></i> NEWS</a>
 				<a href="#"><i class="fas fa-home"></i> CONTACT</a>
