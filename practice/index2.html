@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;box-sizing: border-box;}
+		a:link,a:visited{color: #000;text-decoration: none;}
+		li{list-style: none;}
+		.clearfix:after{content:"";display: block;clear: both;}
+		img{display: block;}
+
+		.gnb_wrap{}
+		.gnb_wrap .gnb{margin: 0 auto;width: 980px;;}
+		.gnb_wrap .gnb ul{}
+		.gnb_wrap .gnb ul li{float: left;width: 20%;text-align: center;position: relative;}
+		.gnb_wrap .gnb ul li:hover{background:gold;}
+		.gnb_wrap .gnb ul li:after{content:"";display: block;width: 1px;height: 20px;background: #000;position: absolute;}
+		
+		.gnb_wrap .gnb ul li a{line-height: 40px;padding: 0 20px;}
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="gnb_wrap">
+		<div class="gnb">
+			<ul class="clearfix">
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

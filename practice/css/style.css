@@ -1,9 +1,13 @@
 @charset "utf-8";
 
-.util_menu{width: 980px;margin: 0 auto;background: green;}
-.util_menu>ul{float: right;background: orange;}
-.util_menu>ul>li{float: left;width: 100px;background: skyblue;text-align: right;}
-.util_menu ul li a{color: #898989;}
+.util_menu{width: 980px;margin: 0 auto;height: 25px;}
+.util_menu>ul{float: right;}
+.util_menu>ul>li{float: left;position: relative;}
+.util_menu>ul>li:last-child a{padding-right: 0;}
+/*.util_menu>ul>li:nth-child(2){padding-right: 25px;}*/
+.util_menu ul li a{color: #898989;padding:0 15px;}
+.util_menu ul li:after{content: "";display: block;width: 1px;height: 15px;background: #9b9b9b;position: absolute;top:5px;}
+.util_menu ul li:first-child:after{display:none;content: "";}
 .util_menu_wrap{height: 25px;}
 
 h1{text-align: center;border-top: 1px solid #000;height: 100px;padding-top: 25px;}
@@ -65,13 +69,19 @@ h1{text-align: center;border-top: 1px solid #000;height: 100px;padding-top: 25px
 .footer_wrap .footer01{background: #4d4d4d;height: 43px;}
 .footer_wrap .footer01 .footer01_txt{width: 980px;margin: 0 auto;}
 .footer_wrap .footer01 .footer01_txt ul{}
-.footer_wrap .footer01 .footer01_txt ul li{float: left;font-weight: bold;padding-right:40px;padding-top:10px;}
-.footer_wrap .footer01 .footer01_txt ul li:last-child{padding-right:0;}
+.footer_wrap .footer01 .footer01_txt ul li{float: left;font-weight: bold;position: relative;}
+.footer_wrap .footer01 .footer01_txt ul li a{line-height: 40px;right: 0;padding: 0 20px;}
+.footer_wrap .footer01 .footer01_txt ul li:first-child a{padding-left: 0;}
+.footer_wrap .footer01 .footer01_txt ul li:after{content: "";display: block;width: 1px;height: 20px;background:#cccccc;position: absolute;top: 10px;left: 1px;}
+.footer_wrap .footer01 .footer01_txt ul li:first-child:after{display: none;content: "";}
 .footer_wrap .footer01 .footer01_txt ul li a{color:#cccccc}
 .footer_wrap .footer02{background: #5e5e5e;height: 104px;}
-.footer_wrap .footer02 .footer02_txt{}
-.footer_wrap .footer02 .footer02_txt h2{}
-.footer_wrap .footer02 .footer02_txt p{}
+.footer_wrap .footer02 .footer02_txt{width: 980px;margin:0 auto;}
+.footer_wrap .footer02 .footer02_txt h2{float: left;width: 120px;color: white;padding-top: 33px;margin-right: 76px;}
+.footer_wrap .footer02 .footer02_txt .footer_tp{float: left;width: 750px;}
+.footer_wrap .footer02 .footer02_txt .footer_tp h4{color:#a6a6a6;padding-top: 8px;padding-bottom: 5px;}
+.footer_wrap .footer02 .footer02_txt .footer_tp p{color:#a6a6a6;font-size: 13px;}
+
 
 
 
