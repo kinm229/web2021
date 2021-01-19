@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>top menu</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../bxslider/js/jquery.bxslider.js">
+  <script>
+    $(document).ready(function () {
+      $('.bxslider').bxSlider({
+      auto: true;
+      speed: 500;
+      pause: 5000;
+      mode: 'horizontal';
+      autoControls: true;
+      pager: true;
+      captions: true;
+    });
+  });
+  </script>
+    <style>
+    .submenu{display: none;}
+
+    nav.gnb{width: 1000px;margin: 0 auto}
+    nav.gnb>ul{background:pink;}
+    nav.gnb>ul>li{float: left;width:200px;background: #0e359a;position: relative;}
+    nav.gnb>ul>li>a{display: block;text-align: center;line-height: 40px;color:white}
+
+    nav.gnb>ul>li:hover{background:skyblue}
+
+    /* nav.gnb>ul>li:nth-child(1) .submenu{display: block;} */
+    .submenu{padding-bottom:10px;position: absolute;width: 100%;background:skyblue;}
+    .submenu li:hover{background-color:green;}
+    .submenu a{display: block;line-height:35px;text-align: center;color:#fff}
+
+    nav.gnb>ul>li:hover .submenu{display: block;}
+
+    .visual{background:rgb(15, 215, 174);height: 400px;}
+  </style>
+
+</head>
+<body>
+  <nav class="gnb">
+    <ul class="clearfix">
+      <li><a href="#">menu</a>
+          <ul class="submenu">
+            <li><a href="#">smenu1</a></li>
+            <li><a href="#">smenu2</a></li>
+            <li><a href="#">smenu3</a></li>
+            <li><a href="#">smenu4</a></li>
+          </ul>
+      </li>
+      <li><a href="#">menu</a>
+          <ul class="submenu">
+            <li><a href="#">smenu1</a></li>
+            <li><a href="#">smenu2</a></li>
+            <li><a href="#">smenu3</a></li>
+            <li><a href="#">smenu4</a></li>
+          </ul>
+      </li>
+      <li><a href="#">menu</a>
+          <ul class="submenu">
+            <li><a href="#">smenu1</a></li>
+            <li><a href="#">smenu2</a></li>
+            <li><a href="#">smenu3</a></li>
+            <li><a href="#">smenu4</a></li>
+          </ul>
+      </li>
+      <li><a href="#">menu</a>
+          <ul class="submenu">
+            <li><a href="#">smenu1</a></li>
+            <li><a href="#">smenu2</a></li>
+            <li><a href="#">smenu3</a></li>
+            <li><a href="#">smenu4</a></li>
+          </ul>
+      </li>
+      <li><a href="#">menu</a>
+          <ul class="submenu">
+            <li><a href="#">smenu1</a></li>
+            <li><a href="#">smenu2</a></li>
+            <li><a href="#">smenu3</a></li>
+            <li><a href="#">smenu4</a></li>
+          </ul>
+      </li>
+    </ul>
+  </nav>
+  <div>
+    <ul class="bxslider">
+      <li><a href="#"><img src="../images/apple.png" alt="" title="이미지1"></a></li>
+      <li><a href="#"><img src="../images/car.png" alt="" title="이미지2"></a></li>
+      <li><a href="#"><img src="../images/banana.png" alt="" title="이미지3"></a></li>
+    </ul>
+  </div>
+
+  <div class="visual"></div>
+</body>
+</html>
