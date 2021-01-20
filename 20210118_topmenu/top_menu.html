@@ -5,35 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>top menu</title>
+  <link rel="stylesheet" href="../css/jquery.bxslider.css">
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
-  <script src="../bxslider/js/jquery-3.1.1.min.js"></script>
-  <script src="../bxslider/js/jquery.bxslider.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.bxslider').bxSlider({
-      auto: true,
-      speed: 500,
-      pause: 5000,
-      mode: 'horizontal',
-      autoControls: true,
-      pager: true,
-      captions: true,
-    });
-  });
-  </script>
-    <style>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/jquery.bxslider.js"></script>
 
 
-
-
-
-
-
-
+  <style>
     .submenu{display: none;}
 
-    nav.gnb{width: 1000px;margin: 0 auto}
+    nav.gnb{width: 1000px;margin: 0 auto;position: relative;z-index:99999}
     nav.gnb>ul{background:pink;}
     nav.gnb>ul>li{float: left;width:200px;background: #0e359a;position: relative;}
     nav.gnb>ul>li>a{display: block;text-align: center;line-height: 40px;color:white}
@@ -47,9 +28,18 @@
 
     nav.gnb>ul>li:hover .submenu{display: block;}
 
-    .visual{background:rgb(15, 215, 174);height: 400px;}
+    .visual{background:rgb(15, 215, 174);}
+    .visual li img{width: 100%;}
+
+
   </style>
 
+  <script>
+    $(document).ready(function(){
+      $(".slide").bxSlider();
+    });
+
+  </script>
 </head>
 <body>
   <nav class="gnb">
@@ -96,14 +86,13 @@
       </li>
     </ul>
   </nav>
-  <div>
-    <ul class="bxslider">
-      <li><a href="#"><img src="../images/pc01.jpg" alt="" title="이미지1"></a></li>
-      <li><a href="#"><img src="../images/pc02.jpg" alt="" title="이미지2"></a></li>
-      <li><a href="#"><img src="../images/pc03.jpg" alt="" title="이미지3"></a></li>
+  <!-- bxslider -->
+  <div class="visual">
+    <ul class="slide">
+      <li><img src="../images/pc01.jpg" alt="111"></li>
+      <li><img src="../images/pc01.jpg" alt="111"></li>
+      <li><img src="../images/pc01.jpg" alt="111"></li>
     </ul>
   </div>
-
-  <div class="visual"></div>
 </body>
 </html>
