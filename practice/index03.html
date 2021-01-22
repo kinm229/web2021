@@ -4,15 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>변수</title>
-
-
-  <scirpt>
-    let num = 10;
-    let num = 20;
-    document.write(num);
-  </scirpt>
+  <title>jquery</title>
+  <style>
+    *{margin: 5px;}
+  </style>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("p").css("border","4px solid red");
+    })
+  </script>
 </head>
 <body>
-  </body>
+  <header id=header>
+    <div class="logo">로고</div>
+    <div class="util">회원가입</div>
+    <nav id="gnb">
+      <ul>
+        <li>메뉴1
+          <li>메뉴1_1</li>
+        </li>
+      </ul>
+    </nav>
+    <div id="visual">
+      <p>비주얼</p>
+    </div>
+    <div id="content">
+      <div class="left">왼쪽</div>
+      <div class="right">
+        <div class="util">오른쪽</div>
+      </div>
+    </div>
+    <div id="banner">배너</div>
+    <footer id="footer">푸터</footer>
+  </header>
+
+</body>
 </html>
