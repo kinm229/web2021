@@ -51,7 +51,21 @@
       }
 
       function prevSlide(){
+        if(overBtn == false){
+          overBtn = true;
+          i = current - 1;
+          if(i == -1){
+            i = banCount - 1;
+            current = 0;
+          }
+          var currentEl = banner.eq(current);
+          var nextEl = banner.eq(i);
 
+          currentEl.css({left:0}).stop().animate({left:"100%"},1000);
+          nextEl.css({left:"-100%"}).stop().animate({left:0},{duration:1000,complete:function(){overBtn=false;}});
+
+          current = i;
+          }
       }
 
       $(".next").click(function(){
@@ -60,6 +74,13 @@
       $(".prev").click(function(){
         prevSlide();
       });
+
+      function trigger(){
+        $(".next").trigger("click");
+      }
+
+      setInterval(trigger,3000);
+
 
 
     });
