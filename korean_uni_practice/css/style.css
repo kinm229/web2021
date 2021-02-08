@@ -4,7 +4,7 @@
 .topMenu_wrap .topMenu{width: 980px;}
 .topMenu_wrap .topMenu .left_menu
 .topMenu_wrap .topMenu .left_menu ul
-.topMenu_wrap .topMenu .left_menu ul li
+.topMenu_wrap .topMenu .left_menu ul li{float: left;width: 120px;}
 .topMenu_wrap .topMenu .right_menu
 .topMenu_wrap .topMenu .right_menu ul
-.topMenu_wrap .topMenu .right_menu ul li
+.topMenu_wrap .topMenu .right_menu ul li{float: left;}
