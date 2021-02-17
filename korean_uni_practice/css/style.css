@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
 .topMenu_wrap{background-color: #0044af;width:100%;}
-.topMenu_wrap .topMenu{width: 980px;background: green;margin: 0 auto;}
-.topMenu_wrap .topMenu .left_menu
-.topMenu_wrap .topMenu .left_menu ul{}
-.topMenu_wrap .topMenu .left_menu ul li{float: left;}
-.topMenu_wrap .topMenu .right_menu
-.topMenu_wrap .topMenu .right_menu ul{position: relative;}
-.topMenu_wrap .topMenu .right_menu ul li{float: left;position: absolute;}
+.topMenu_wrap .topMenu{width: 1200px;background: green;margin: 0 auto;}
+.topMenu_wrap .topMenu .left_menu{float: left;}
+.topMenu_wrap .topMenu .left_menu li{}
+.topMenu_wrap .topMenu .right_menu{float: right;}
+.topMenu_wrap .topMenu .right_menu li{}
