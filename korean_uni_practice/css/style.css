@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
 .topMenu_wrap{background-color: #0044af;width:100%;}
-.topMenu_wrap .topMenu{width: 1200px;background: green;margin: 0 auto;}
+.topMenu_wrap .topMenu{width: 1200px;margin: 0 auto;}
 .topMenu_wrap .topMenu .left_menu{float: left;}
-.topMenu_wrap .topMenu .left_menu li{float: left;}
+.topMenu_wrap .topMenu .left_menu li{float: left;width: 120px;margin-right: 5px;}
+.topMenu_wrap .topMenu .left_menu li a{display: block;line-height: 40px;text-align: center;background: #00163B;
+color:#fff;font-weight:bold;}
 .topMenu_wrap .topMenu .right_menu{float: right;}
-.topMenu_wrap .topMenu .right_menu li{float: left;}
+.topMenu_wrap .topMenu .right_menu li{float: left;width: 120px;margin-right: 5px;font-size: 0.8em;}
+.topMenu_wrap .topMenu .right_menu li a{display: block;line-height:40px;padding: 0 10px;
+color:#fff;}
